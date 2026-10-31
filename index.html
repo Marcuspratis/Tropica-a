@@ -47,7 +47,7 @@
         <a href="#casa" data-t="nav_casa">La casa</a>
         <a href="#carta" data-t="nav_carta">Carta</a>
         <a href="#espacios" data-t="nav_esp">Espacios</a>
-        <a href="#eventos" data-t="nav_ev">Eventos</a>
+        <a href="#eventos" class="nav-hl"><span data-t="nav_ev">Eventos</span> <span class="star" aria-hidden="true">★</span></a>
         <a href="#opiniones" data-t="nav_op">Opiniones</a>
         <a href="#visitanos" data-t="nav_lleg">Cómo llegar</a>
       </nav>
@@ -110,6 +110,28 @@
     </div>
   </div>
 
+  <div class="promo-wrap" id="promo" hidden>
+    <div class="wrap">
+      <div class="promo">
+        <div class="promo-p" aria-hidden="true">P</div>
+        <div class="promo-tx">
+          <div class="promo-kicker" data-t="pr_k"></div>
+          <h2 class="promo-h"><span data-t="pr_h1"></span> <em data-t="pr_h2"></em></h2>
+          <p data-t="pr_p"></p>
+          <ol class="promo-steps">
+            <li><b>1</b><span data-t="pr_s1"></span></li>
+            <li><b>2</b><span data-t="pr_s2"></span></li>
+            <li><b>3</b><span data-t="pr_s3"></span></li>
+          </ol>
+        </div>
+        <div class="promo-cta">
+          <div class="promo-clock"><b>1 h 20</b><span>min</span></div>
+          <a class="btn btn-dark" data-href="parking" href="#" target="_blank" rel="noopener"><svg><use href="#i-nav"/></svg><span data-t="pr_btn"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <section id="casa">
     <div class="wrap about fade">
       <div>
@@ -162,11 +184,15 @@
     <div class="wrap events fade">
       <div class="phone-vid" id="evMedia"></div>
       <div>
+        <div class="ev-badge"><span aria-hidden="true">★</span> <span data-t="ev_badge"></span></div>
         <div class="eyebrow">Festas e eventos</div>
-        <h2 data-t="v_h"></h2>
+        <h2><span data-t="v_h"></span> <em class="hl-name">Tropicaña</em></h2>
         <p class="lede" style="margin-top:16px" data-t="v_p"></p>
         <ul class="ev-list" id="evList"></ul>
-        <a class="btn btn-orange" href="#reservas" data-t="v_cta"></a>
+        <div class="row">
+          <a class="btn btn-dark" href="#reservas" data-t="v_cta"></a>
+          <a class="btn btn-wa" data-href="wa" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+        </div>
       </div>
     </div>
   </section>
@@ -272,6 +298,8 @@
       <p>Rúa Francisco Catoira, 38 · 15007 A Coruña</p>
       <p><a href="tel:+34881066747">+34 881 06 67 47</a></p>
       <p data-t="ft_m1"></p><p data-t="ft_m2"></p><p data-t="ft_m3"></p>
+      <p data-t="ft_mpark"></p>
+      <p><a href="https://www.instagram.com/tropicanacoruna/" target="_blank" rel="noopener">Instagram · @tropicanacoruna</a></p>
       <button class="foot-switch" type="button" data-loc="mallos" data-t="ft_see"></button>
     </div>
     <div class="legal">© Tropicaña · Culleredo · A Coruña</div>
